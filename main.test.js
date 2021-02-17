@@ -23,10 +23,10 @@ function opposite(num3) {
 }   
 
 //* There must be something flawed with the code/test here
-let oldName = name;
 
-function makeFullName(oldName){
-return name = name + ' ' + 'Jaffe';
+
+function makeFullName(lastName){
+ name = name + ' ' + lastName;
 }
 
 function yellAt(name){
