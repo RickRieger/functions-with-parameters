@@ -22,7 +22,12 @@ function opposite(num3) {
   z = -num3;
 }   
 
-let makeFullName = name + ' Rieger';
+//* There must be something flawed with the code/test here
+let oldName = name;
+
+function makeFullName(oldName){
+return name = name + ' ' + 'Jaffe';
+}
 
 function yellAt(name){
 greeting = greeting + ','+' '+name + '!';
