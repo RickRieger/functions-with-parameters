@@ -14,13 +14,13 @@ function multiply(num){
   x = num * x;
 }
 
-function modYBy(num2){
-  y =  y % num2; 
+function modYBy(divisor){
+  y =  y % divisor;
 }
 
-function opposite(num3) {
-  z = -num3;
-}   
+function opposite(value) {
+  z = -value;
+}
 
 //* There must be something flawed with the code/test here
 
@@ -29,8 +29,8 @@ function makeFullName(lastName){
  name = name + ' ' + lastName;
 }
 
-function yellAt(name){
-greeting = greeting + ','+' '+name + '!';
+function yellAt(person){
+greeting = greeting + ','+' '+person + '!';
 }
 
 
