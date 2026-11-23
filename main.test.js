@@ -10,28 +10,37 @@ let name = 'Rick';
 let greeting = 'HEY';
 
 
-function multiply(num){
+function multiply(num) {
   x = num * x;
 }
 
-function modYBy(num2){
-  y =  y % num2; 
+function modYBy(divisor) {
+  y = y % divisor;
 }
 
-function opposite(num3) {
-  z = -num3;
-}   
-
-//* There must be something flawed with the code/test here
-
-
-function makeFullName(lastName){
- name = name + ' ' + lastName;
+function opposite(value) {
+  z = -value;
 }
 
-function yellAt(name){
-greeting = greeting + ','+' '+name + '!';
+// Note: the instructions call makeFullName a "variable", but the test calls
+// it like a function (makeFullName('Jaffe')), so it has to be a function.
+function makeFullName(lastName) {
+  name = name + ' ' + lastName;
 }
+
+function yellAt(person) {
+  greeting = greeting + ', ' + person + '!';
+}
+
+// Extra test added during the 2026 cleanup (not part of the original assignment).
+// The instructions give two examples for opposite (6 → -6 and -85 → 85), but the
+// original test only checks a positive number.
+describe('opposite (negative input)', () => {
+  it('turns a negative number positive', () => {
+    opposite(-85);
+    expect(z).toBe(85);
+  });
+});
 
 
 
