@@ -10,27 +10,26 @@ let name = 'Rick';
 let greeting = 'HEY';
 
 
-function multiply(num){
+function multiply(num) {
   x = num * x;
 }
 
-function modYBy(divisor){
-  y =  y % divisor;
+function modYBy(divisor) {
+  y = y % divisor;
 }
 
 function opposite(value) {
   z = -value;
 }
 
-//* There must be something flawed with the code/test here
-
-
-function makeFullName(lastName){
- name = name + ' ' + lastName;
+// Note: the instructions call makeFullName a "variable", but the test calls
+// it like a function (makeFullName('Jaffe')), so it has to be a function.
+function makeFullName(lastName) {
+  name = name + ' ' + lastName;
 }
 
-function yellAt(person){
-greeting = greeting + ','+' '+person + '!';
+function yellAt(person) {
+  greeting = greeting + ', ' + person + '!';
 }
 
 
