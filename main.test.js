@@ -32,6 +32,16 @@ function yellAt(person) {
   greeting = greeting + ', ' + person + '!';
 }
 
+// Extra test added during the 2026 cleanup (not part of the original assignment).
+// The instructions give two examples for opposite (6 → -6 and -85 → 85), but the
+// original test only checks a positive number.
+describe('opposite (negative input)', () => {
+  it('turns a negative number positive', () => {
+    opposite(-85);
+    expect(z).toBe(85);
+  });
+});
+
 
 
 
